@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Agrega scroll vertical cuando el contenido exceda la altura de la ventana */
+
+  }
+  
+  header {
+    display: flex;
+    width: 100%;
+    height: 600px; /* Altura de la cabecera */
+    max-width: 1280px; /* Ancho máximo de la cabecera */
+    margin: 0 auto; /* Centra la cabecera horizontalmente */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los bordes redondos */
+    position: relative; /* Agrega posición relativa a la cabecera */
+    margin-bottom: 0; /* Elimina el margen inferior del encabezado */
+  }
+  
+  #header-left {
+    width: 100%;
+    background: linear-gradient(to right, black, #535353); /* Gradiente de colores de gris oscuro a gris claro */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Ajusta el alineamiento hacia la izquierda */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+  }
+  
+  #header-left p {
+    color: white;
+    margin: px 0; /* Ajusta el margen vertical de los párrafos */
+    margin-left: 50px; /* Ajusta el margen izquierdo de los párrafos */
+  }
+  
+  #header-left p:first-child {
+    font-size: 20px; /* Ajusta el tamaño de la letra del primer párrafo */
+  }
+  #header-left .name {
+    color: rgb(234, 148, 0); /* Cambia el color según tus preferencias */
+  }
+  
+  .name {
+    font-size: 60px;
+    font-weight: bold;
+   
+    
+    
+  }
+  
+  .profession {
+    font-size: 20px;
+  }
+  
+  #header-image {
+    width: 30%;
+    height: auto; /* Ajusta la altura automáticamente */
+    position: absolute;
+    top: 50%; /* Alinea verticalmente en el centro */
+    right: 10%; /* Ajusta la posición desde el borde derecho */
+    transform: translateY(-50%); /* Centra verticalmente */
+    overflow: hidden;
+  }
+  
+  #header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    border-radius: 50%; /* Borde circular */
+  }
+  
+  #header-image img:hover {
+    opacity: 1; /* Ajusta la opacidad al 100% en el hover */
+  }
+  
+  /* Puedes agregar más estilos según tus necesidades */
+  main {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #535353, black); /* Cambia los colores según tus preferencias */
+    width: 100%;
+    height: 600px; /* Altura del main */
+    color: rgb(255, 255, 255);
+    max-width: 1280px; /* Ancho máximo de la cabecera */
+    margin: 0 auto; /* Centra la cabecera horizontalmente */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los bordes redondos */
+    position: relative; /* Agrega posición relativa a la cabecera */
+    margin-bottom: 0; /* Elimina el margen inferior del encabezado */
+  }
+  
+  #main-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  #main-left {
+    width: 40%; /* Ancho del contenedor izquierdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-left img {
+    width: 300px;
+    height: auto;
+    margin-left: 20px; /* Ajusta el margen izquierdo de la imagen */
+  }
+  
+  .image-container {
+    width: 80%; /* Ajusta el tamaño del contenedor de la imagen */
+    margin: 100px; /* Agrega un margen alrededor del contenedor de la imagen */
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 300px;
+    height: auto;
+    object-fit: contain; /* Ajusta el tamaño de la imagen sin deformarla */
+    border-radius: 50%;
+  }
+  
+    
+    #main-right {
+    width: 60%; /* Ancho del contenedor derecho */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+  }
+  
+  #about-me {
+    margin-bottom: 20px;
+    font-size: 50px;
+    margin: 80px;
+    margin-left: 20px;
+  }
+  
+  #about-me h2 {
+    font-size: 20px;
+    
+    
+
+  }
+  
+  
+  #about-me h1 {
+    font-size: 40px;
+    margin: 0px 0px 0px 0; /* Ajusta el margen vertical de los párrafos */
+    color:rgb(234, 148, 0);
+  }
+
+  #about-me p {
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra según tus preferencias */
+    font-size: 16px; /* Cambia el tamaño de la letra según tus preferencias */
+    margin-top: 50px; /* Ajusta el margen superior según tus preferencias */
+    /* Agrega más estilos personalizados aquí */
+  }
+
+  footer {
+    background: linear-gradient(to right, black, #535353); /* Cambia los colores según tus preferencias */
+    padding: 20px; /* Ajusta el espaciado interno según tus preferencias */
+    width: 100%;
+    height: 400px; /* Altura del main */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; /* Oculta cualquier contenido que exceda los bordes redondos */
+    position: relative; /* Agrega posición relativa a la cabecera */
+    margin-bottom: 0; /* Elimina el margen inferior del encabezado */
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-left {
+    width: 60%; /* Ajusta el ancho de la sección izquierda del footer */
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .footer-left {
+    margin-left: 80px; /* Ajusta el margen izquierdo según tus preferencias */
+  }
+  
+  
+  .image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .image-section img {
+    width: 70px; /* Ajusta el ancho de las imágenes según tus preferencias */
+    height: auto;
+    margin-bottom: 5px; /* Ajusta el margen inferior entre las imágenes según tus preferencias */
+    margin-top: 50px; /* Ajusta la separación superior según tus preferencias */
+  
+  }
+  
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineación del texto a la izquierda */
+  }
+  
+  .text-section p {
+    margin: 30px; /* Elimina el margen vertical de los párrafos */
+    font-size: 24px; /* Ajusta el tamaño de la fuente del texto */
+    color: rgb(234, 148, 0); /* Cambia el color del texto según tus preferencias */
+    margin-top: 65px; /* Ajusta la separación superior según tus preferencias */
+    margin-left: 100px;
+  }
+  
+  
+  .section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Ajusta el margen inferior entre las secciones según tus preferencias */
+    color: rgb(234, 148, 0);
+  }
+  
+  .section-content {
+    display: flex;
+    align-items: center;    
+  }
+  
+  
+  .section-content p {
+    margin-right: 10px; /* Ajusta el margen derecho del párrafo según tus preferencias */
+  }
+  
+  .section-content img {
+    width: 100px; /* Ajusta el ancho de las imágenes según tus preferencias */
+    height: auto;
+    margin-right: 10px; /* Ajusta el margen derecho de las imágenes según tus preferencias */
+    
+   
+  }  
+  
+  
+  .footer-right {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px; /* Ajusta la separación superior según tus preferencias */
+  
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .grid-item {
+    width: 40%;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio disponible */
+    
+  }  
+  
+  
+  
